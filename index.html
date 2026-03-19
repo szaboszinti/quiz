@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kvíz</title>
+</head>
+<body>
+    <form action="index.html" method="get">
+        <!-- 1.kerdes -->
+        <h2>1.kérdés: Mi Izland fővárosa?</h2>
+        <label for="fovaros">Főváros</label>
+        <input type="text" id="fovaros" name="fovaros" placeholder="pl.: Budapest"><br>
+
+        <!-- 2.kerdes -->
+         <h2>Melyik Izlandi vízesés</h2>
+         <input type="radio" id="niagara" name = "vizeses" value="niagara">
+         <label for="niagara">Niagara</label><br>
+
+        <input type="radio" id="gullfoss" name = "vizeses" value="gullfoss">
+         <label for="gullfoss">Gullfoss</label><br>
+         <div id= "vizeses_eredmeny"></div>
+
+         <!-- 3.kerdes -->
+          <h2>Melyik aranyosabb szerinted? </h2>
+          <input type="checkbox" id="latnivalo" name="latnivalo" value="balna">
+          <label for="balna">Bálna</label>
+          <br>
+          <input type="checkbox" id="latnivalo" name="latnivalo" value="foka">
+          <label for="foka">Fóka</label>
+          <br>
+          <input type="checkbox" id="latnivalo" name="latnivalo" value="pingvin">
+          <label for="pingvin">Pingvin</label>
+          <br>
+          <br>
+        <input type="submit" value="Küldés">
+    </form>
+    <div id="felhasznaloi_input"></div>
+    <script src="kviz.js"></script>
+  
+    
+</body>
+</html>
